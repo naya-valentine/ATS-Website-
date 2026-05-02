@@ -2,6 +2,7 @@
 const dropDownGoals = document.getElementById("dropDownGoals")
 const dropDownActivities = document.getElementById("dropDownActivities")
 const dropDownProgress = document.getElementById("dropDownProgress")
+const memberPageWrapper = document.getElementById("memberPageWrapper")
 
 
 const dropDownGoalsContent = document.getElementById("dropDownGoalsContent")
@@ -38,8 +39,15 @@ dropDownProgress.addEventListener("click", () => {
 })
 
 //Members Content
+// membersBtn.addEventListener("click", () => {
+//     console.log("clicked")
+//     memberPage1.classList.toggle("hidden"); 
+//     memberPage2.classList.toggle("hidden");
+// })
+
 membersBtn.addEventListener("click", () => {
-    console.log("clicked")
-    memberPage1.classList.toggle("hidden"); 
-    memberPage2.classList.toggle("hidden");
+    memberPage1.classList.toggle("slide");
+    memberPage2.classList.toggle("slide");
 })
+
+

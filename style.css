@@ -145,6 +145,18 @@ nav a:active {
     color: var(--darkergray);
     margin-left: 40px;
 }
+#memberPageWrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+
+    transform: translateX(0%);
+
+    transition: transform 0.5s ease;
+}
+.slide {
+    transform: translateX(-100%);
+}
 #membersGrid {
     padding: 20px;
     display: flex;
@@ -171,13 +183,13 @@ nav a:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    flex: 1;
+    min-width: 100%;
 }  
 #memberPage2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    flex: 1;
+    min-width: 100%;;
 }  
 
 .memberCardp {
