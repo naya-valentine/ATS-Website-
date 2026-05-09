@@ -46,8 +46,7 @@ dropDownProgress.addEventListener("click", () => {
 // })
 
 membersBtn.addEventListener("click", () => {
-    memberPage1.classList.toggle("slide");
-    memberPage2.classList.toggle("slide");
+    memberPageWrapper.classList.toggle("slide");
 })
 
 

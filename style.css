@@ -147,21 +147,22 @@ nav a:active {
 }
 #memberPageWrapper {
     display: flex;
-    overflow: hidden;
     width: 100%;
-
-    transform: translateX(0%);
+    /* overflow: hidden; */
 
     transition: transform 0.5s ease;
 }
 .slide {
     transform: translateX(-100%);
+    overflow: visible;
 }
 #membersGrid {
     padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 #membersGrid button {
     font-size: 45px;
@@ -171,8 +172,6 @@ nav a:active {
     border: none;
 }
 #membersGrid button:hover{
-    color: white;
-    background-color: var(--gray);
     cursor: pointer;
 }
 #membersGrid button:active{
@@ -189,7 +188,7 @@ nav a:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    min-width: 100%;;
+    min-width: 100%;
 }  
 
 .memberCardp {
