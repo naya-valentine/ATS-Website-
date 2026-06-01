@@ -217,10 +217,15 @@ nav a:active {
     color: white;
     box-shadow: var(--boxShadow);
 }
+.memberCardw {
+    color: white; 
+    background-color: white;
+
+}
 
 .memberCardp img {
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 137px;
     height: auto;
 }
 .memberCardb img {
@@ -493,6 +498,13 @@ nav a:active {
 .instagramLink a:hover {
     background-color: var(--lighterGray);
     color: var(--darkerGreen);
+
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+}
+.instagramLink a:active {
+    transform: scale(0.96);
+    transition: all 0.2s ease;
 }
 @media (max-width: 768px) {
     .about {
@@ -504,8 +516,14 @@ nav a:active {
     .memberCardp {
         padding: 10px;
     }
+    .memberCardp img {
+        max-width: 100%; 
+    }
     .memberCardb {
         padding: 10px;
+    }
+    .memberCardb img {
+        max-width: 100%; 
     }
     .vission h1 {
         padding: 20px; 

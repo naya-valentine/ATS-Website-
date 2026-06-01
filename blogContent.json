@@ -1,5 +1,28 @@
 {
     "a":{
+        "title": "Lessons from Making Dubai Chewy Cookies", 
+        "headingList": {
+            "heading1": "Introduction", 
+            "heading2": "Problem 1 - Black Marshmallows", 
+            "heading3": "Problem 2 - Mushy Pistachio Filling", 
+            "heading4": "Problem 3 - Wonky Shape", 
+            "heading5": "Problem 4 - Customer Opinions", 
+            "heading6": "Lesson"
+        }, 
+        "content": {
+            "paragraph1": "As a beginner, I’ve always relied on YouTube tutorials to cook👩🏻‍🍳. But the thing is, no matter how easy a tutorial seems, I always find a way to make it difficult. And perhaps you've experienced the same thing. Recently, our little group made our first batch of Dubai Chewy Cookies to raise funds for a donation. But making the simple dessert proved to be a complicated task.",
+            "paragraph2": "We started smoothly by frying the kataifi🍳, mixing in the pistachio paste🥣, and setting it in the fridge🗄️. But then, we arrived at the marshmallow part. For some reason, the marshmallows just wouldn't melt; they clumped together and turned into a charcoal-like dough. I guess that's what we got for using off-looking marshmallows. So, we had to purchase new bags of marshmallows. Luckily, the newly bought ones were melting (as they should), and we added the chocolate powder🍫.",
+            "paragraph3": "Next, we moved on to the pistachio-kataifi filling. We thought cooling it in the fridge would harden it, but after a touch, we knew that was not the case. It was way too mushy to roll into a ball, and we got pistachio-kataifi all over our hands 🙌. After making a huge mess, we finally managed to shape around 28 balls—though a lot of the filling was wasted in the process 😭.",
+            "paragraph4": "The hardest part, though, had to be wrapping the filling. Our inexperienced hands weren’t prepared to handle the sticky marshmallow skin. We proceeded to make all sorts of wonky shapes🫠. It was looking hopeless until a helper arrived on the scene. My mom came and helped us shape the Dubai Chewy Cookies👩🏻. And her secret ingredient was a bit of oil mixed with the hands. And with that, 25 Dubai Chewy Cookies were packaged and ready to be sold.",
+            "paragraph5": "Now for the moment of truth... how would they taste? I was worried that the Dubai Chewy Cookies would taste awful😥. I was afraid of how people would react. But what else could I do but pray and hope for the best? The next day, I started selling the Dubai Chewy Cookies. Gaining customers wasn't difficult, however, the crunch time was the taste test🍽️. When I saw them eating, I immediately came and asked, “What’s wrong? Is it bad?” To my surprise (and relief), they just laughed at my overly anxious behaviour and assured me that they tasted great😋.", 
+            "paragraph6": "The experience showed me just how different reality can be from my imagination 💭. I was too anxious. We encountered all sorts of problems, but in the end, what was all the fretting for? This taught me to not overthink future events. The process may look chaotic at first, but the result can be surprising. With the chance of failure comes the chance for success. We can only focus on what we can do and pray for the best✨."
+        }, 
+        "image": "Images/Blog Images/a/dcc.JPG",
+        "author": "Naya Visista Valentine",
+        "timeRead": "4 min read",
+        "instagram": "https://www.instagram.com/allthesame_plg_br?igsh=MThwa2ZncHplY2N5cQ%3D%3D&utm_source=qr"
+    }, 
+    "b":{
         "title": "Visit to Kasih Bapa Orphanage", 
         "content": {
             "paragraph1": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.", 
@@ -11,27 +34,6 @@
         "image": "Images/Blog Images/a/IMG_2545.JPG", 
         "author": "Celesta Kusuma", 
         "timeRead": "5 min read", 
-        "instagram": "https://www.instagram.com/p/DWtot_1Ewz8/?igsh=MXc1dGtkaGV3eTh2Mg=="
-    }, 
-    "b":{
-        "title": "Lessons from Making Dubai Chewy Cookies", 
-        "headingList": {
-            "heading1": "Problem 1 - Black Marshmallows", 
-            "heading2": "Problem 2 - Mushy Pistachio Filling", 
-            "heading3": "Problem 3 - _ Shape", 
-            "heading4": "Problem 4 - Customer Interest and Opinions"
-        }, 
-        "content": {
-            "paragraph1": "As a mere beginner, I'd always rely on YouTube tutorials to guide my cooking process. But the thing is, no matter how easy a tutorial can be, I'll always find a way to make it difficult. And perhaps, you've experienced the same thing too.",
-            "paragraph2": "Our little group had just made our first batch of Dubai Chewy Cookies to raise funds for a future donation event. But, making the simple desert proved to be a hectic task.",
-            "paragraph2.1":"We were off to a smooth start by by frying the kataifi, mixing in the pistachio paste, and setting off into the fridge, until we arrived to the melting part. For some reason the marshmallow just wouldn't melt, it clumped together and turn into this charcoal-like dough. I guess that's what we get for using off-looking marshmallows. Well then, it’s time to purchase new bags of marshmallows. Luckily the newly bought marshmallows were melting (as it should) and we added the chocolate powder. Problem one solved; but at the expense of spending more money.",
-            "paragraph3": "Now time to shape the pistachio-kataifi filling. We thought that cooling it in the fridge would hardened it but after a touch we know that was not the case. It was too mushy to be rolled into a ball. We got pistachio-kataifi all over our hands 🙌. After making a huge mess, we finally _ around 28 balls (but a lot of the filling were wasted in the process 😭)",
-            "paragraph4": "But the hardest part had to be wrapping the kunafa filling with the marshmallow. These inexperienced hands weren’t prepared to handle sticky marshmallow skin. We proceeded to make all sorts of wonky shapes. Instead of a smooth rounded ball, we had a humongous flat dripping balls. It was looking hopeless until a helper came into the scene. My mom helped us shaping the Dubai Chewy Cookies; her secret was a bit of oil mixed to the hands. And with that 25 Dubai Chewy Cookies were packaged and ready to be sold.", 
-            "paragraph5": ""
-        }, 
-        "image": "Images/Blog Images/b/IMG_2560.JPG",
-        "author": "Naya Visista Valentine",
-        "timeRead": "4 min read",
         "instagram": "https://www.instagram.com/p/DWtot_1Ewz8/?igsh=MXc1dGtkaGV3eTh2Mg=="
     }
 }

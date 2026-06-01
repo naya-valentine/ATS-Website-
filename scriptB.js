@@ -34,6 +34,12 @@ fetch("blogContent.json")   //promise a response
             document.getElementById("heading4").innerText = headingList.heading4;
             document.getElementById("paragraph4").innerText = text.paragraph4;
 
+            document.getElementById("heading5").innerText = headingList.heading5;
+            document.getElementById("paragraph5").innerText = text.paragraph5;
+
+            document.getElementById("heading6").innerText = headingList.heading6;
+            document.getElementById("paragraph6").innerText = text.paragraph6;
+
             document.getElementById("imageContainer").innerHTML = `<img src="${blogContent.image}" alt="blog image not found">`;
         } else {
             document.getElementById("title").innerText = "Blog Not Found"; 
