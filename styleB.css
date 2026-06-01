@@ -31,9 +31,6 @@
 .topBar img {
     width: 50px;
     height: auto;
-    border: solid var(--gray);
-    border-width: 1px;
-    border-radius: 50%;
 }
 nav {
     display: flex;
@@ -90,6 +87,7 @@ nav a:active {
     padding-right: 20px;
     border-radius: 75px;
     width: fit-content;
+    
 
     transform: translateY(-39px) translateX(-60px);
     box-shadow: var(--boxShadow);
@@ -118,6 +116,10 @@ nav a:active {
 .fas.fa-circle {
     font-size: 7px;
     color: var(--darkergray);
+}
+.content h2 {
+    margin-left: 20px;
+    color: var(--darkerGreen);
 }
 .content p {
     margin-left: 20px;
@@ -152,4 +154,10 @@ nav a:active {
     border-radius: 50px;
 
     box-shadow: var(--boxShadow);
+}
+@media (max-width: 768px) {
+    #title {
+        transform: translateY(-39px) translateX(-200px);
+        scale: 70%;
+    }
 }

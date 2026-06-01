@@ -21,9 +21,17 @@ fetch("blogContent.json")   //promise a response
             document.getElementById("instagram").innerHTML = `<a href="${blogContent.instagram}"><i class="fab fa-instagram"></i> Check Out Our Instagram Post</a>`;
 
             const text = blogContent.content; 
+            const headingList = blogContent.headingList; 
+            document.getElementById("heading1").innerText = headingList.heading1;
             document.getElementById("paragraph1").innerText = text.paragraph1; 
+
+            document.getElementById("heading2").innerText = headingList.heading2;
             document.getElementById("paragraph2").innerText = text.paragraph2;
+
+            document.getElementById("heading3").innerText = headingList.heading3;
             document.getElementById("paragraph3").innerText = text.paragraph3;
+            
+            document.getElementById("heading4").innerText = headingList.heading4;
             document.getElementById("paragraph4").innerText = text.paragraph4;
 
             document.getElementById("imageContainer").innerHTML = `<img src="${blogContent.image}" alt="blog image not found">`;

@@ -34,11 +34,8 @@
 }
 
 .topBar img {
-    width: 50px;
+    max-width: 50px;
     height: auto;
-    border: solid var(--gray);
-    border-width: 1px;
-    border-radius: 50%;
 }
 nav {
     display: flex;
@@ -81,11 +78,12 @@ nav a:active {
     justify-content: center;
     align-items: center;
     padding: 60px;
-    height: 540px;
 
     overflow: hidden;
 }
 .titleSection img {
+    max-width: 100%;
+    height: auto;
     position: relative;
     top: -30px;
 }
@@ -119,8 +117,8 @@ nav a:active {
 
 .about img {
     width: 250px;
-    height: auto;
-    
+    /* max-width: 100%;
+    height: auto; */
     
     /* display: block;
     padding: 6px;
@@ -222,9 +220,13 @@ nav a:active {
 
 .memberCardp img {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 .memberCardb img {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .ribbon {
@@ -415,7 +417,7 @@ nav a:active {
 .page1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
-    justify-items: start;
+    justify-items: center;
     align-items: start;
 
     justify-content: center;
@@ -492,5 +494,21 @@ nav a:active {
     background-color: var(--lighterGray);
     color: var(--darkerGreen);
 }
-
+@media (max-width: 768px) {
+    .about {
+       flex-direction: column; 
+    }
+    .vissionCards {
+        flex-direction: column;
+    }
+    .memberCardp {
+        padding: 10px;
+    }
+    .memberCardb {
+        padding: 10px;
+    }
+    .vission h1 {
+        padding: 20px; 
+    }
+}
 

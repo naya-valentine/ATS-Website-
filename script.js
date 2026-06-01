@@ -47,6 +47,11 @@ dropDownProgress.addEventListener("click", () => {
 
 membersBtn.addEventListener("click", () => {
     memberPageWrapper.classList.toggle("slide");
+    if (membersBtn.innerText === ">") {
+        document.getElementById("membersBtn").innerText = "<"
+    } else {
+        document.getElementById("membersBtn").innerText = ">"
+    }
 })
 
 
