@@ -34,11 +34,8 @@
 }
 
 .topBar img {
-    width: 50px;
+    max-width: 50px;
     height: auto;
-    border: solid var(--gray);
-    border-width: 1px;
-    border-radius: 50%;
 }
 nav {
     display: flex;
@@ -81,11 +78,12 @@ nav a:active {
     justify-content: center;
     align-items: center;
     padding: 60px;
-    height: 540px;
 
     overflow: hidden;
 }
 .titleSection img {
+    max-width: 100%;
+    height: auto;
     position: relative;
     top: -30px;
 }
@@ -119,8 +117,8 @@ nav a:active {
 
 .about img {
     width: 250px;
-    height: auto;
-    
+    /* max-width: 100%;
+    height: auto; */
     
     /* display: block;
     padding: 6px;
@@ -145,11 +143,24 @@ nav a:active {
     color: var(--darkergray);
     margin-left: 40px;
 }
+#memberPageWrapper {
+    display: flex;
+    width: 100%;
+    /* overflow: hidden; */
+
+    transition: transform 0.5s ease;
+}
+.slide {
+    transform: translateX(-100%);
+    overflow: visible;
+}
 #membersGrid {
     padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 #membersGrid button {
     font-size: 45px;
@@ -159,8 +170,6 @@ nav a:active {
     border: none;
 }
 #membersGrid button:hover{
-    color: white;
-    background-color: var(--gray);
     cursor: pointer;
 }
 #membersGrid button:active{
@@ -171,13 +180,13 @@ nav a:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    flex: 1;
+    min-width: 100%;
 }  
 #memberPage2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
-    flex: 1;
+    min-width: 100%;
 }  
 
 .memberCardp {
@@ -208,12 +217,21 @@ nav a:active {
     color: white;
     box-shadow: var(--boxShadow);
 }
+.memberCardw {
+    color: white; 
+    background-color: white;
+
+}
 
 .memberCardp img {
     border-radius: 50%;
+    max-width: 137px;
+    height: auto;
 }
 .memberCardb img {
     border-radius: 50%;
+    max-width: 137px;
+    height: auto;
 }
 
 .ribbon {
@@ -404,7 +422,7 @@ nav a:active {
 .page1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
-    justify-items: start;
+    justify-items: center;
     align-items: start;
 
     justify-content: center;
@@ -480,6 +498,35 @@ nav a:active {
 .instagramLink a:hover {
     background-color: var(--lighterGray);
     color: var(--darkerGreen);
-}
 
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+}
+.instagramLink a:active {
+    transform: scale(0.96);
+    transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+    .about {
+       flex-direction: column; 
+    }
+    .vissionCards {
+        flex-direction: column;
+    }
+    .memberCardp {
+        padding: 10px;
+    }
+    .memberCardp img {
+        max-width: 100%; 
+    }
+    .memberCardb {
+        padding: 10px;
+    }
+    .memberCardb img {
+        max-width: 100%; 
+    }
+    .vission h1 {
+        padding: 20px; 
+    }
+}
 

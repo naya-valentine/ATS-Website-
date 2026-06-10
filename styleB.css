@@ -1,0 +1,163 @@
+:root {
+    --pink:#ff9e9b;
+    --green: #04C1C8; 
+    --darkerGreen: #00a0b2; 
+    --darkerPink: #f77d7d; 
+    --gray: rgb(207, 207, 207); 
+    --lighterGray: rgb(247, 247, 247);
+    --boxShadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --darkergray: rgb(138, 138, 138);
+    --evendarkergray: rgb(97, 97, 97); 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    margin-top: 5px;
+    color: var(--green);
+    border-bottom: solid var(--gray);
+    border-width: 1px;
+}
+
+.topBar img {
+    width: 50px;
+    height: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 30px;
+    align-items: stretch;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white; 
+    background-color: var(--green);
+    border-radius: 25px;
+    padding: 2px 20px;
+    box-shadow: var(--boxShadow);
+}
+
+nav a:hover {
+    background-color: var(--darkerGreen);
+}
+
+nav a:active {
+    transform: scale(0.96);
+    transition: all 0.2s ease;
+}
+#imageContainer {
+    background-image: url("Images/Header Images/Background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    border-radius: 20px;
+    border: solid white 7px;
+    overflow: hidden;
+    height: 550px;
+}
+#imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#title {
+    padding-left: 70px;
+    color: white;
+    background-color: var(--pink);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-radius: 75px;
+    width: fit-content;
+    
+
+    transform: translateY(-39px) translateX(-60px);
+    box-shadow: var(--boxShadow);
+    
+}
+#title::after {
+    content:"";
+    display: block;
+    height: 5px;
+    border-radius: 15px;
+    width: 600px;
+    background-color: white;
+    margin-top: 2px;
+
+}
+.littleInfo {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    color: var(--darkergray);
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.fas.fa-circle {
+    font-size: 7px;
+    color: var(--darkergray);
+}
+.content h2 {
+    margin-left: 20px;
+    color: var(--darkerGreen);
+}
+.content p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: var(--evendarkergray);
+}
+#instagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#instagram a:hover {
+    background-color: var(--darkerGreen);
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+}
+#instagram a:active {
+    transform: scale(0.96);
+    transition: all 0.2s ease;
+}
+#instagram a{
+    background-color: var(--green);
+    text-decoration: none;
+    padding: 10px 40px;
+    color: white;
+
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 50px;
+
+    box-shadow: var(--boxShadow);
+}
+@media (max-width: 768px) {
+    #title {
+        transform: translateY(-39px) translateX(-200px);
+        scale: 70%;
+    }
+}
