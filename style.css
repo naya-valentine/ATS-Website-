@@ -506,7 +506,14 @@ nav a:active {
     transform: scale(0.96);
     transition: all 0.2s ease;
 }
-@media (max-width: 768px) {
+@media (max-width: 748px) {
+    * {
+        overflow-x: hidden; 
+        max-width: 100%; 
+    }
+    body {
+        overflow-x: hidden;
+    }
     .about {
        flex-direction: column; 
     }
