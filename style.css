@@ -517,6 +517,9 @@ nav a:active {
     .about {
        flex-direction: column; 
     }
+    .location {
+        padding: 50px 20px; 
+    }
     .vissionCards {
         flex-direction: column;
     }
