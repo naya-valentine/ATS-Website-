@@ -98,7 +98,7 @@ nav a:active {
     left: 50%;
     transform: translateX(-50%);
 
-    background: white;
+    background: white; 
 
     border: 1px solid var(--gray);
     border-radius: 50%;
