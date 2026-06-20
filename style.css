@@ -34,7 +34,7 @@
 }
 
 .topBar img {
-    max-width: 50px;
+    max-width: 30px;
     height: auto;
 }
 nav {
@@ -518,7 +518,7 @@ nav a:active {
        flex-direction: column; 
     }
     .location {
-        padding: 50px 20px; 
+        padding: 30px 10px; 
     }
     .vissionCards {
         flex-direction: column;
