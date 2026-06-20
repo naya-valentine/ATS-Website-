@@ -108,7 +108,7 @@ nav a:active {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:0px 100px;
+    margin:0px 50px;
 
     color: white;
     gap: 100px;
@@ -137,8 +137,7 @@ nav a:active {
     background-image: url("Images/Header Images/TextBox.png");
     background-size: 100% 100%;
     background-position: center;
-    padding: 75px 100px;
-
+    padding: 75px 80px;
 }
 .members h1 {
     color: var(--darkergray);
@@ -507,7 +506,13 @@ nav a:active {
     transform: scale(0.96);
     transition: all 0.2s ease;
 }
-@media (max-width: 748px) {
+
+@media (max-width: 1130px) {
+    .vissionCards {
+        flex-direction: column;
+    }
+}
+@media (max-width: 749px) {
     * {
         overflow-x: hidden; 
         max-width: 100%; 
@@ -516,9 +521,18 @@ nav a:active {
         overflow-x: hidden;
     }
     .about {
-       flex-direction: column; 
+        margin:0px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about img {
+        max-height: 300px;
+        width: auto;
     }
     .location {
+        min-width: 200px;
+        width: 100%;
         padding: 30px 10px; 
     }
     .vissionCards {
@@ -540,4 +554,25 @@ nav a:active {
         padding: 20px; 
     }
 }
+@media (max-width: 394px) {
+    .about {
+        gap: 10px;
+    }
+    .about img {
+        max-height: 250px;
+        width: auto;
+    }
+    #memberPage1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        justify-content: center;
+        min-width: 100%;
+    }  
+#memberPage2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        justify-content: center;
+        min-width: 100%;
+    }  
+} 
 
