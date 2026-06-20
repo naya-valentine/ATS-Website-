@@ -98,7 +98,7 @@ nav a:active {
     left: 50%;
     transform: translateX(-50%);
 
-    background: white;
+    background: white; 
 
     border: 1px solid var(--gray);
     border-radius: 50%;
@@ -116,7 +116,8 @@ nav a:active {
 }
 
 .about img {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     /* max-width: 100%;
     height: auto; */
     
