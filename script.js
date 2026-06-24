@@ -16,7 +16,7 @@ const memberPage2 = document.getElementById("memberPage2")
 function loadMembers() {
     memberPageWrapper.classList.remove("slide")
 }
-loadMembers()
+loadMembers() 
 
 //Vissions Content
 dropDownGoals.addEventListener("click", () => {
