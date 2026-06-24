@@ -15,6 +15,9 @@
     padding: 0;
     font-family: 'Times New Roman', serif;
 }
+.hidden {
+    display: none;
+}
 .topBar {
     display: flex;
     flex-direction: row;
@@ -103,7 +106,7 @@ nav a:active {
     margin-top: 2px;
 
 }
-.littleInfo {
+#littleInfo {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
@@ -117,11 +120,11 @@ nav a:active {
     font-size: 7px;
     color: var(--darkergray);
 }
-.content h2 {
+#content h2 {
     margin-left: 20px;
     color: var(--darkerGreen);
 }
-.content p {
+#content p {
     margin-left: 20px;
     margin-bottom: 10px;
     color: var(--evendarkergray);
@@ -154,6 +157,12 @@ nav a:active {
     border-radius: 50px;
 
     box-shadow: var(--boxShadow);
+}
+#errorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
 }
 @media (max-width: 768px) {
     #title {

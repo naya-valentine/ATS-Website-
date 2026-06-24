@@ -4,16 +4,70 @@ const params = new URLSearchParams(window.location.search);
 //"?id=a&name=duck" -> {id:"a", name: "duck"}
 console.log(params) 
 
+let errorMessage = ""
+
+const errorContainer = document.getElementById("errorContainer");
+const title = document.getElementById("title");
+const littleInfo = document.getElementById("littleInfo");
+const instagram = document.getElementById("instagram");
+const content = document.getElementById("content");
+
+function setError() {
+    console.log("commencing setError")
+    title.classList.add("hidden")
+    littleInfo.classList.add("hidden")
+    instagram.classList.add("hidden")
+    content.classList.add("hidden")
+}
+
+function resetError(){
+    console.log("commencing resetError")
+    errorContainer.classList.add("hidden")
+    title.classList.remove("hidden")
+    littleInfo.classList.remove("hidden")
+    instagram.classList.remove("hidden")
+    content.classList.remove("hidden")
+}
+resetError()
+
 const id = params.get("id")
 fetch("blogContent.json")   //promise a response 
     //1st way
     //.then(function(response) {
     //  return response.json()})
     //2nd way
-    .then(response => response.json())  //takes the response, fetch() will return objects as a string, so we need to turn it into a json format first to be used
+    .then(response => {
+        if (!response.ok) {
+            // throw new Error("No files found")} //an error "404  Not Found" is considered a successful fetch, and parsing the error code will crash the system
+            errorContainer.classList.remove("hidden")
+            errorMessage = "No files found"
+            errorContainer.innerHTML = `<h1>${errorMessage}</h1>`
+            setError()
+            throw new Error("No files found")}
+        return response.json();})  //takes the response, fetch() will return objects as a string, so we need to turn it into a json format first to be used
     .then(data => {
+        console.log("this is data:")
+        console.log(data)
+        if (!data || data.length === 0) {
+            // console.log("No blogs are found in JSON file")
+            errorContainer.classList.remove("hidden")
+            errorMessage = "No blogs are found in JSON file"
+            errorContainer.innerHTML = `<h1>${errorMessage}</h1>`
+            setError()
+            return
+        }
         const blogContent = data[id]
-
+        console.log("This is blogContent:")
+        console.log(blogContent)
+        if (!blogContent) {
+            // console.log("No blog matches the id")
+            errorContainer.classList.remove("hidden")
+            errorMessage = "No blog matches the id"
+            errorContainer.innerHTML = `<h1>${errorMessage}</h1>`
+            setError()
+            return
+        }
+        // .catch(error => console.error("Error:", error))
         if (blogContent) {
             document.getElementById("title").innerHTML = `<i class="fas fa-seedling"></i> ${blogContent.title} <i class="fas fa-seedling"></i>`; 
             document.getElementById("author").innerHTML = `By ${blogContent.author}`;
