@@ -12,6 +12,12 @@ const dropDownProgressContent = document.getElementById("dropDownProgressContent
 const membersBtn = document.getElementById("membersBtn")
 const memberPage1 = document.getElementById("memberPage1")
 const memberPage2 = document.getElementById("memberPage2")
+
+function loadMembers() {
+    memberPageWrapper.classList.remove("slide")
+}
+loadMembers()
+
 //Vissions Content
 dropDownGoals.addEventListener("click", () => {
     if (!dropDownGoalsContent.classList.contains("hidden")) {
